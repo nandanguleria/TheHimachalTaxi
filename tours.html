@@ -1,222 +1,574 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Tours - Himachal Taxi Service</title>
+    <!-- ========== META & SEO ========== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Packages — Himachal Taxi Service | Himachal, Jammu & Chandigarh Tours</title>
+    <meta name="description" content="Explore our tour packages across Himachal Pradesh, Jammu & Chandigarh. Local sightseeing, outstation trips & custom travel plans. Book your journey today!">
+    <meta name="keywords" content="Himachal tour packages, Shimla tour, Manali trip, Dharamshala taxi, Jammu travel, Chandigarh sightseeing, Kasol tour, Dalhousie trip">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://himachaltaxi.com/tours.html">
+
+    <meta property="og:title" content="Tour Packages — Himachal Taxi Service">
+    <meta property="og:description" content="Explore tour packages across Himachal, Jammu & Chandigarh.">
+    <meta property="og:url" content="https://himachaltaxi.com/tours.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/shimla.jpeg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Himachal Taxi — Tour Packages">
+
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body>
 
-<!-- TOP BAR -->
-<div class="topbar">
-📞 +91 80913 31806 | ✉ booking@himachaltaxi.com
-</div>
-
-<!-- NAVBAR -->
-<nav class="navbar">
-    <div class="container nav-container">
-        <div class="logo">Himachal<span>Taxi</span></div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="tours.html" class="active">Tours</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </div>
-</nav>
-
-<!-- HERO -->
-<section class="inner-hero">
-    <h1>Tour Packages</h1>
-</section>
-
-<!-- PACKAGES -->
-<section class="section">
-    <h2>Popular Packages</h2>
-    <p class="center-text">
-        Explore Himachal with our best-selling travel packages.
-    </p>
-
-    <div class="cards">
-
-        <!-- SHIMLA -->
-        <div class="card package-card">
-            <img src="images/shimla.jpeg">
-            <div class="card-body">
-                <h3>Shimla Tour</h3>
-                <p class="price">Starting ₹2700</p>
-                <p>2 Days / 1 Night</p>
-                <ul>
-                    <li>✔ Mall Road Visit</li>
-                    <li>✔ Kufri Sightseeing</li>
-                    <li>✔ Jakhoo Temple</li>
-                </ul>
-                <a href="contact.html" class="btn">Book Now</a>
+    <!-- ==================== TOP BAR ==================== -->
+    <header class="topbar">
+        <div class="container">
+            <div class="topbar-left">
+                <span>
+                    <svg viewBox="0 0 24 24" style="width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    +91 80913 31806
+                </span>
+                <span>
+                    <svg viewBox="0 0 24 24" style="width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    booking@himachaltaxi.com
+                </span>
+            </div>
+            <div class="topbar-right">
+                <a href="https://wa.me/918091331806" target="_blank" rel="noopener" aria-label="WhatsApp">
+                    <svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                </a>
             </div>
         </div>
+    </header>
 
-        <!-- MANALI -->
-        <div class="card package-card">
-            <img src="images/manali.jpeg">
-            <div class="card-body">
-                <h3>Manali Tour</h3>
-                <p class="price">Starting ₹3000</p>
-                <p>3 Days / 2 Nights</p>
-                <ul>
-                    <li>✔ Solang Valley</li>
-                    <li>✔ Rohtang Pass</li>
-                    <li>✔ Hadimba Temple</li>
-                </ul>
-                <a href="contact.html" class="btn">Book Now</a>
-            </div>
-        </div>
-
-        <!-- DHARAMSHALA -->
-        <div class="card package-card">
-            <img src="images/dharamshala.jpeg">
-            <div class="card-body">
-                <h3>Dharamshala Tour</h3>
-                <p class="price">Starting ₹2500</p>
-                <p>2 Days / 1 Night</p>
-                <ul>
-                    <li>✔ McLeodganj</li>
-                    <li>✔ Dalai Lama Temple</li>
-                    <li>✔ Bhagsu Falls</li>
-                </ul>
-                <a href="contact.html" class="btn">Book Now</a>
-            </div>
-        </div>
-
-         <div class="card package-card">
-            <img src="images/dharamshala.jpeg">
-            <div class="card-body">
-                <h3>Dharamshala Tour</h3>
-                <p class="price">Starting ₹2500</p>
-                <p>2 Days / 1 Night</p>
-                <ul>
-                    <li>✔ McLeodganj</li>
-                    <li>✔ Dalai Lama Temple</li>
-                    <li>✔ Bhagsu Falls</li>
-                </ul>
-                <a href="contact.html" class="btn">Book Now</a>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- INCLUDED -->
-<section class="section light-bg">
-    <h2>What’s Included</h2>
-
-    <div class="cards">
-        <div class="card">
-            <div class="card-body">🚖 Pickup & Drop</div>
-        </div>
-
-        <div class="card">
-            <div class="card-body">🧍 Professional Driver</div>
-        </div>
-
-        <div class="card">
-            <div class="card-body">🗺 Local Sightseeing</div>
-        </div>
-
-        <div class="card">
-            <div class="card-body">⛽ Fuel Included</div>
-        </div>
-    </div>
-</section>
-
-<!-- SERVICE MAP (multi-location) -->
-<section class="section">
-    <h2>Our Service Locations</h2>
-    <p class="center-text">
-        We provide pickup, drop & tour support across the listed cities/areas.
-    </p>
-
-    <div class="container">
-        <div class="map-wrap map-multi">
-            <iframe
-                title="Himachal Taxi Locations Map"
-                src="https://www.google.com/maps?q=Dharamshala,HP|Talwara,HP|Pathankot,Punjab|Una,HP|Chandigarh|Gaggal,HP|Kangra,HP|Jassur,HP|Dhalhousie,HP&output=embed"
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-
-            <div class="map-legend">
-                <span class="dot"></span> Locations: Dharamshala, Talwara, Pathankot, Una, Chandigarh Airport, Gaggal Airport, Kangra, Jassur, Dhalhousie
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- CUSTOM TOUR -->
-<section class="section">
-    <h2>Custom Tours</h2>
-    <p class="center-text">
-        Need a personalized trip? We create custom travel plans based on your schedule and preferences.
-    </p>
-    <a href="contact.html" class="btn">Plan My Trip</a>
-</section>
-
-<!-- SLIM CTA (REPLACED OLD ORANGE BLOCK) -->
-<section class="cta-strip">
-    <div class="container cta-content">
-        <div>
-            <h3>Need a Taxi in Himachal?</h3>
-            <p>Quick booking, best prices, reliable service</p>
-        </div>
-
-        <div class="cta-buttons">
-            <a href="contact.html" class="btn">Book Now</a>
-<a href="https://wa.me/918091331806" class="btn whatsapp">WhatsApp</a>
-        </div>
-    </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-    <div class="footer-content">
-
-        <div class="footer-col">
-            <h3>Himachal Taxi</h3>
-            <p>Reliable taxi service across Himachal Pradesh with safe and comfortable rides.</p>
-        </div>
-
-        <div class="footer-col">
-            <h4>Quick Links</h4>
-            <ul>
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🚕</span>
+                Himachal<span>Taxi</span>
+            </a>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html" class="active">Tours</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="tours.html">Tours</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" class="btn btn-primary btn-sm" data-open-modal>Plan My Trip</a></li>
             </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">☰</button>
         </div>
+    </nav>
 
-        <div class="footer-col">
-            <h4>Services</h4>
-            <ul>
-                <li>Local Sightseeing</li>
-                <li>Outstation Trips</li>
-                <li>Airport Pickup</li>
-            </ul>
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-content">
+            <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">✕</button>
+            <a href="index.html">Home</a>
+            <a href="tours.html" class="active">Tours</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="#" class="btn btn-primary" data-open-modal>🚀 Plan My Trip</a>
         </div>
-
-        <div class="footer-col">
-            <h4>Contact</h4>
-<p>📞 +91 80913 31806</p>
-            <p>✉ booking@himachaltaxi.com</p>
-            <p>1) M4C6+54R, Amb Andaura Railway Station Rd, Amb, Himachal Pradesh 177203</p>
-            <p>2) Out gate of Pathankot railway station, Punjab 145001</p>
-
-        </div>
-
     </div>
 
-    <div class="footer-bottom">
-        <p>© 2026 Himachal Taxi Service</p>
-    </div>
-</footer>
+    <!-- ==================== INNER HERO ==================== -->
+    <section class="inner-hero" style="background-image: url('images/manali.jpeg');">
+        <div class="inner-hero-content" data-aos="fade-up">
+            <h1>Explore Our Tour Packages</h1>
+            <p>Discover the best of Himachal, Jammu & Chandigarh</p>
+        </div>
+    </section>
 
+    <!-- ==================== HIMACHAL TOURS ==================== -->
+    <section class="section" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header">
+                <span class="tour-tag tour-tag-himachal">🏔️ Himachal Pradesh</span>
+                <h2>Himachal Tours</h2>
+                <p>Explore the stunning hill stations and valleys of Himachal Pradesh with our reliable taxi service.</p>
+            </div>
+
+            <div class="cards-grid">
+                <!-- Shimla -->
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <img class="card-img" src="images/shimla.jpeg" alt="Shimla Tour" loading="lazy">
+                    <div class="card-body">
+                        <span class="tour-tag tour-tag-himachal">Himachal</span>
+                        <h3>Shimla Tour</h3>
+                        <div class="tour-duration">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            2 Days / 1 Night
+                        </div>
+                        <p>Explore the Queen of Hills. Visit Mall Road, Kufri, Jakhoo Temple, and enjoy scenic views of the snow-capped Himalayas.</p>
+                        <div class="tour-highlights">
+                            <span class="tour-highlight">Mall Road</span>
+                            <span class="tour-highlight">Kufri</span>
+                            <span class="tour-highlight">Jakhoo Temple</span>
+                            <span class="tour-highlight">The Ridge</span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-sm" data-open-modal>Plan This Trip</a>
+                    </div>
+                </div>
+
+                <!-- Manali -->
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <img class="card-img" src="images/manali.jpeg" alt="Manali Tour" loading="lazy">
+                    <div class="card-body">
+                        <span class="tour-tag tour-tag-himachal">Himachal</span>
+                        <h3>Manali Tour</h3>
+                        <div class="tour-duration">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            3 Days / 2 Nights
+                        </div>
+                        <p>Discover the adventure capital of Himachal. Solang Valley, Rohtang Pass, Hadimba Temple, and the charming Old Manali vibes.</p>
+                        <div class="tour-highlights">
+                            <span class="tour-highlight">Solang Valley</span>
+                            <span class="tour-highlight">Rohtang Pass</span>
+                            <span class="tour-highlight">Hadimba Temple</span>
+                            <span class="tour-highlight">Old Manali</span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-sm" data-open-modal>Plan This Trip</a>
+                    </div>
+                </div>
+
+                <!-- Dharamshala -->
+                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                    <img class="card-img" src="images/dharamshala.jpeg" alt="Dharamshala Tour" loading="lazy">
+                    <div class="card-body">
+                        <span class="tour-tag tour-tag-himachal">Himachal</span>
+                        <h3>Dharamshala Tour</h3>
+                        <div class="tour-duration">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            2 Days / 1 Night
+                        </div>
+                        <p>Experience Tibetan culture in McLeodganj, visit the Dalai Lama Temple, Bhagsu Falls, and enjoy panoramic Dhauladhar views.</p>
+                        <div class="tour-highlights">
+                            <span class="tour-highlight">McLeodganj</span>
+                            <span class="tour-highlight">Dalai Lama Temple</span>
+                            <span class="tour-highlight">Bhagsu Falls</span>
+                            <span class="tour-highlight">Naddi View Point</span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-sm" data-open-modal>Plan This Trip</a>
+                    </div>
+                </div>
+
+                <!-- Kasol -->
+                <div class="card" data-aos="fade-up" data-aos-delay="400">
+                    <img class="card-img" src="images/hero-1.jpeg" alt="Kasol Tour" loading="lazy">
+                    <div class="card-body">
+                        <span class="tour-tag tour-tag-himachal">Himachal</span>
+                        <h3>Kasol & Kullu Valley</h3>
+                        <div class="tour-duration">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            3 Days / 2 Nights
+                        </div>
+                        <p>The Mini Israel of India! Explore the Parvati Valley, Kullu town, Manikaran Sahib, and enjoy riverside camping.</p>
+                        <div class="tour-highlights">
+                            <span class="tour-highlight">Kasol</span>
+                            <span class="tour-highlight">Kullu</span>
+                            <span class="tour-highlight">Manikaran</span>
+                            <span class="tour-highlight">Parvati Valley</span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-sm" data-open-modal>Plan This Trip</a>
+                    </div>
+                </div>
+
+                <!-- Dalhousie -->
+                <div class="card" data-aos="fade-up" data-aos-delay="500">
+                    <img class="card-img" src="images/dharamshala.jpeg" alt="Dalhousie Tour" loading="lazy">
+                    <div class="card-body">
+                        <span class="tour-tag tour-tag-himachal">Himachal</span>
+                        <h3>Dalhousie & Khajjiar</h3>
+                        <div class="tour-duration">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            2 Days / 1 Night
+                        </div>
+                        <p>Visit the "Mini Switzerland of India" — Khajjiar. Explore Dalhousie's colonial charm, Panchpula, and Satdhara Falls.</p>
+                        <div class="tour-highlights">
+                            <span class="tour-highlight">Khajjiar</span>
+                            <span class="tour-highlight">Panchpula</span>
+                            <span class="tour-highlight">Satdhara Falls</span>
+                            <span class="tour-highlight">Gandhi Chowk</span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-sm" data-open-modal>Plan This Trip</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== JAMMU TOURS ==================== -->
+    <section class="section section-ivory" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header">
+                <span class="tour-tag tour-tag-jammu">🛕 Jammu Region</span>
+                <h2>Jammu Tours</h2>
+                <p>Spiritual journeys and scenic getaways in the Jammu region.</p>
+            </div>
+
+            <div class="cards-grid">
+                <!-- Katra / Vaishno Devi -->
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <img class="card-img" src="images/hero-1.jpeg" alt="Katra Vaishno Devi" loading="lazy">
+                    <div class="card-body">
+                        <span class="tour-tag tour-tag-jammu">Jammu</span>
+                        <h3>Katra — Vaishno Devi</h3>
+                        <div class="tour-duration">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            2 Days / 1 Night
+                        </div>
+                        <p>Pilgrimage trip to Katra for Mata Vaishno Devi Yatra. Drop to Banganga base camp. Comfortable ride from Himachal/Chandigarh.</p>
+                        <div class="tour-highlights">
+                            <span class="tour-highlight">Vaishno Devi</span>
+                            <span class="tour-highlight">Banganga</span>
+                            <span class="tour-highlight">Ardhkuwari</span>
+                            <span class="tour-highlight">Katra Market</span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-sm" data-open-modal>Plan This Trip</a>
+                    </div>
+                </div>
+
+                <!-- Patnitop -->
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <img class="card-img" src="images/dharamshala.jpeg" alt="Patnitop" loading="lazy">
+                    <div class="card-body">
+                        <span class="tour-tag tour-tag-jammu">Jammu</span>
+                        <h3>Patnitop Hill Station</h3>
+                        <div class="tour-duration">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            1 Day / 2 Days
+                        </div>
+                        <p>Beautiful hill station on the Jammu-Srinagar highway. Known for pine forests, meadows, and breathtaking sunrise views.</p>
+                        <div class="tour-highlights">
+                            <span class="tour-highlight">Sunrise Point</span>
+                            <span class="tour-highlight">Pine Forests</span>
+                            <span class="tour-highlight">Meadows</span>
+                            <span class="tour-highlight">Paragliding</span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-sm" data-open-modal>Plan This Trip</a>
+                    </div>
+                </div>
+
+                <!-- Jammu City -->
+                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                    <img class="card-img" src="images/shimla.jpeg" alt="Jammu City" loading="lazy">
+                    <div class="card-body">
+                        <span class="tour-tag tour-tag-jammu">Jammu</span>
+                        <h3>Jammu City Tour</h3>
+                        <div class="tour-duration">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            1 Day
+                        </div>
+                        <p>Explore the winter capital of Jammu & Kashmir. Visit Raghunath Temple, Bahu Fort, Amar Mahal, and the local bazaars.</p>
+                        <div class="tour-highlights">
+                            <span class="tour-highlight">Raghunath Temple</span>
+                            <span class="tour-highlight">Bahu Fort</span>
+                            <span class="tour-highlight">Amar Mahal</span>
+                            <span class="tour-highlight">Local Bazaars</span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-sm" data-open-modal>Plan This Trip</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CHANDIGARH TOURS ==================== -->
+    <section class="section" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header">
+                <span class="tour-tag tour-tag-chandigarh">🏙️ Chandigarh</span>
+                <h2>Chandigarh Tours</h2>
+                <p>Discover the beautiful City Beautiful and its surroundings.</p>
+            </div>
+
+            <div class="cards-grid">
+                <!-- Chandigarh City -->
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <img class="card-img" src="images/hero-1.jpeg" alt="Chandigarh City Tour" loading="lazy">
+                    <div class="card-body">
+                        <span class="tour-tag tour-tag-chandigarh">Chandigarh</span>
+                        <h3>Chandigarh City Tour</h3>
+                        <div class="tour-duration">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            1 Day
+                        </div>
+                        <p>Explore Le Corbusier's masterpiece. Visit Rock Garden, Sukhna Lake, Capitol Complex, Sector 17, and the famous Elante Mall.</p>
+                        <div class="tour-highlights">
+                            <span class="tour-highlight">Rock Garden</span>
+                            <span class="tour-highlight">Sukhna Lake</span>
+                            <span class="tour-highlight">Capitol Complex</span>
+                            <span class="tour-highlight">Sector 17</span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-sm" data-open-modal>Plan This Trip</a>
+                    </div>
+                </div>
+
+                <!-- Pinjore Garden -->
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <img class="card-img" src="images/shimla.jpeg" alt="Pinjore Garden" loading="lazy">
+                    <div class="card-body">
+                        <span class="tour-tag tour-tag-chandigarh">Chandigarh</span>
+                        <h3>Pinjore Garden & Nearby</h3>
+                        <div class="tour-duration">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            1 Day
+                        </div>
+                        <p>Visit the historic Yadavindra Gardens in Pinjore, then explore Morni Hills — the only hill station in Haryana.</p>
+                        <div class="tour-highlights">
+                            <span class="tour-highlight">Yadavindra Gardens</span>
+                            <span class="tour-highlight">Morni Hills</span>
+                            <span class="tour-highlight">Tikkar Taal</span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-sm" data-open-modal>Plan This Trip</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== INCLUDED ==================== -->
+    <section class="section section-ivory" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header">
+                <h2>What's Included</h2>
+                <p>Every tour package comes with these standard inclusions.</p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="service-card">
+                    <div class="service-icon">🚖</div>
+                    <h3>Pickup & Drop</h3>
+                    <p>Free pickup and drop from your specified location within the service area.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🧍</div>
+                    <h3>Professional Driver</h3>
+                    <p>Experienced, courteous drivers with excellent knowledge of local routes.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🗺️</div>
+                    <h3>Local Sightseeing</h3>
+                    <p>Coverage of all major tourist attractions as per your itinerary.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⛽</div>
+                    <h3>Fuel Included</h3>
+                    <p>Fuel charges are included in the quoted fare. No hidden costs.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🅿️</div>
+                    <h3>Toll & Parking</h3>
+                    <p>Toll taxes included. Parking charges covered at tourist spots.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📞</div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock customer support for any assistance during your trip.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICE MAP ==================== -->
+    <section class="section" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Service Locations</h2>
+                <p>We provide pickup, drop & tour support across these locations.</p>
+            </div>
+
+            <div class="map-wrap">
+                <iframe
+                    title="Himachal Taxi Service Locations"
+                    src="https://www.google.com/maps?q=Dharamshala,HP|Talwara,HP|Pathankot,Punjab|Una,HP|Chandigarh|Gaggal,HP|Kangra,HP|Jassur,HP|Dalhousie,HP|Katra,Jammu|Patnitop,Jammu&output=embed"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CUSTOM TOUR CTA ==================== -->
+    <section class="section section-dark text-center" data-aos="fade-up">
+        <div class="container">
+            <h2>Need a Custom Tour?</h2>
+            <p class="section-subtitle">We create personalized travel plans based on your schedule, group size, and preferences. Tell us what you need!</p>
+            <a href="#" class="btn btn-secondary mt-2" data-open-modal>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px;"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                Plan My Custom Trip
+            </a>
+        </div>
+    </section>
+
+    <!-- ==================== CTA STRIP ==================== -->
+    <section class="cta-strip">
+        <div class="container cta-content">
+            <div>
+                <h3>Ready to Explore?</h3>
+                <p>Book your tour now and enjoy a hassle-free journey.</p>
+            </div>
+            <div class="cta-buttons">
+                <a href="#" class="btn" data-open-modal>Plan My Trip</a>
+                <a href="https://wa.me/918091331806" class="btn btn-whatsapp" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>🚕 Himachal Taxi</h3>
+                <p>Your trusted travel partner across Himachal Pradesh. Safe, comfortable, and affordable taxi services. Operating 24/7.</p>
+                <div class="footer-social">
+                    <a href="https://wa.me/918091331806" target="_blank" rel="noopener" aria-label="WhatsApp">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tours.html">Tour Packages</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Destinations</h4>
+                <ul>
+                    <li><a href="tours.html">Shimla Tour</a></li>
+                    <li><a href="tours.html">Manali Tour</a></li>
+                    <li><a href="tours.html">Dharamshala Tour</a></li>
+                    <li><a href="tours.html">Katra Vaishno Devi</a></li>
+                    <li><a href="tours.html">Chandigarh Tour</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <div class="footer-contact-item">
+                    <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <span>+91 80913 31806</span>
+                </div>
+                <div class="footer-contact-item">
+                    <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    <span>booking@himachaltaxi.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Himachal Taxi Service. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ==================== PLAN MY TRIP MODAL ==================== -->
+    <div class="modal-overlay" id="planTripModal">
+        <div class="modal">
+            <button class="modal-close" id="modalClose">✕</button>
+            <h2>🚀 Plan My Trip</h2>
+            <p class="section-subtitle">Tell us about your trip and we'll get back to you instantly!</p>
+            <form class="modal-form" id="planTripForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="ptName">Full Name *</label>
+                        <input type="text" id="ptName" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ptEmail">Email Address</label>
+                        <input type="email" id="ptEmail" placeholder="email@example.com">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="ptPhone">Phone Number *</label>
+                        <input type="tel" id="ptPhone" placeholder="+91 XXXXX XXXXX" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ptDate">Travel Date *</label>
+                        <input type="date" id="ptDate" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="ptPickup">Pickup Location *</label>
+                        <input type="text" id="ptPickup" placeholder="City / Location" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ptDestination">Destination *</label>
+                        <input type="text" id="ptDestination" placeholder="Where to?" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="ptPassengers">Passengers</label>
+                        <select id="ptPassengers">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="ptVehicle">Vehicle Preference</label>
+                        <select id="ptVehicle">
+                            <option value="">No Preference</option>
+                            <option value="Sedan">Sedan (4 Seater)</option>
+                            <option value="SUV">SUV (6-7 Seater)</option>
+                            <option value="Tempo Traveller">Tempo Traveller</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="ptMessage">Special Requests</label>
+                    <textarea id="ptMessage" placeholder="Any specific requirements..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-secondary">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                    Send via WhatsApp
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ==================== FLOATING WHATSAPP ==================== -->
+    <div class="floating-whatsapp">
+        <span class="floating-whatsapp-tooltip">Chat with us!</span>
+        <button class="floating-whatsapp-btn" aria-label="Chat on WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </button>
+    </div>
+
+    <!-- ==================== BACK TO TOP ==================== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true, offset: 80, easing: 'ease-out-cubic' });
+        document.addEventListener('DOMContentLoaded', function() {
+            var today = new Date().toISOString().split('T')[0];
+            document.querySelectorAll('input[type="date"]').forEach(function(el) {
+                el.setAttribute('min', today);
+            });
+        });
+    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
+               

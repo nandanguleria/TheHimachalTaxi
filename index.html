@@ -1,311 +1,709 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Himachal Taxi Service</title>
+    <!-- ========== META & SEO ========== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himachal Taxi Service | Reliable Taxi in Himachal Pradesh</title>
+    <meta name="description" content="Book reliable taxi service in Himachal Pradesh. Local sightseeing, outstation trips, airport & railway station pickup. Safe, comfortable & affordable travel.">
+    <meta name="keywords" content="Himachal taxi, taxi service Himachal, Shimla taxi, Manali taxi, Dharamshala taxi, outstation taxi, airport pickup Himachal">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://himachaltaxi.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Himachal Taxi Service | Reliable Taxi in Himachal Pradesh">
+    <meta property="og:description" content="Book reliable taxi service in Himachal Pradesh. Safe, comfortable & affordable travel.">
+    <meta property="og:url" content="https://himachaltaxi.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/hero-1.jpeg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Himachal Taxi Service">
+    <meta name="twitter:description" content="Reliable taxi service across Himachal Pradesh.">
+
+    <!-- JSON-LD LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Himachal Taxi Service",
+        "image": "images/hero-1.jpeg",
+        "description": "Reliable taxi service across Himachal Pradesh. Local sightseeing, outstation trips, airport & railway station pickup.",
+        "url": "https://himachaltaxi.com",
+        "telephone": "+918091331806",
+        "email": "booking@himachaltaxi.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Amb Andaura Railway Station Rd",
+            "addressLocality": "Amb",
+            "addressRegion": "Himachal Pradesh",
+            "postalCode": "177203",
+            "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+            "opens": "00:00",
+            "closes": "23:59"
+        },
+        "sameAs": [
+            "https://wa.me/918091331806"
+        ]
+    }
+    </script>
+
+    <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body>
 
-<!-- TOP BAR -->
-<div class="topbar">
-📞 +91 80913 31806 | ✉ booking@himachaltaxi.com
-</div>
-
-<!-- NAVBAR -->
-<nav class="navbar">
-    <div class="container nav-container">
-        <div class="logo">Himachal<span>Taxi</span></div>
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="tours.html">Tour Packages</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </div>
-</nav>
-
-<!-- HERO -->
-<section class="hero">
-    <div class="hero-content">
-        <h1>Travel in Comfort, Arrive in  <span>Style</span></h1>
-        <p>Comfortable Rides Across Beautiful Himachal</p>
-        <a href="contact.html" class="btn">Plan Your Journey</a>
-    </div>
-
-</section>
-
-<!-- SERVICES -->
-<section class="section">
-    <h2>Our Services</h2>
-
-    <div class="cards">
-
-        <div class="card">
-            <img src="images/local.jpeg">
-            <div class="card-body">
-                <h3>Local Sightseeing</h3>
-                <p>Explore Shimla, Manali & nearby attractions with comfortable rides and experienced drivers.</p>
+    <!-- ==================== TOP BAR ==================== -->
+    <header class="topbar">
+        <div class="container">
+            <div class="topbar-left">
+                <span>
+                    <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    +91 80913 31806
+                </span>
+                <span>
+                    <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    booking@himachaltaxi.com
+                </span>
+            </div>
+            <div class="topbar-right">
+                <a href="https://wa.me/918091331806" target="_blank" rel="noopener" aria-label="WhatsApp">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                </a>
             </div>
         </div>
+    </header>
 
-        <div class="card">
-            <img src="images/outstaion.jpeg">
-            <div class="card-body">
-                <h3>Outstation Trips</h3>
-                <p>Reliable intercity taxi services for long-distance travel across Himachal and nearby cities.</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="images/Railway-station.jpeg">
-            <div class="card-body">
-                <h3>Railway Station Pickup</h3>
-                <p>Timely pickup and drop from railway stations with hassle-free service.</p>
-            </div>
-        </div>
-
-
-        <div class="card">
-            <img src="images/airport.jpeg">
-            <div class="card-body">
-                <h3>Airport Pickup</h3>
-                <p>Timely pickup and drop from airports and railway stations with hassle-free service.</p>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- VEHICLES -->
-<section class="section">
-    <h2>Our Fleet</h2>
-
-    <div class="cards">
-
-        <!-- DZIRE -->
-        <div class="card fleet-card">
-            <div class="fleet-carousel" data-carousel>
-                <div class="fleet-slides">
-                    <img class="fleet-slide" src="images/swift.jpeg" alt="Swift Dzire">
-                </div>
-
-                <button class="fleet-prev" type="button" aria-label="Previous image" title="Previous">❮</button>
-                <button class="fleet-next" type="button" aria-label="Next image" title="Next">❯</button>
-                <div class="fleet-dots" aria-label="Slide navigation"></div>
-            </div>
-
-            <div class="card-body">
-                <h3>Swift Dzire</h3>
-
-
-                <ul>
-                    <li>✔ 4 Seater</li>
-                    <li>✔ AC Sedan</li>
-                    <li>✔ Comfortable for small families</li>
-                </ul>
-
-                <a href="contact.html" class="btn">Book Now</a>
-            </div>
-        </div>
-
-
-        <!-- ETIOS -->
-        <div class="card fleet-card">
-            <div class="fleet-carousel" data-carousel>
-                <div class="fleet-slides">
-                    <img class="fleet-slide" src="images/etios.jpeg" alt="Toyota Etios">
-                </div>
-
-                <button class="fleet-prev" type="button" aria-label="Previous image" title="Previous">❮</button>
-                <button class="fleet-next" type="button" aria-label="Next image" title="Next">❯</button>
-                <div class="fleet-dots" aria-label="Slide navigation"></div>
-            </div>
-
-            <div class="card-body">
-                <h3>Toyota Etios</h3>
-
-
-                <ul>
-                    <li>✔ 4 Seater</li>
-                    <li>✔ Spacious Sedan</li>
-                    <li>✔ Smooth long-distance travel</li>
-                </ul>
-
-                <a href="contact.html" class="btn">Book Now</a>
-            </div>
-        </div>
-
-
-        <!-- INNOVA -->
-        <div class="card fleet-card">
-            <div class="fleet-carousel" data-carousel>
-                <div class="fleet-slides">
-                    <img class="fleet-slide" src="images/innova.jpeg" alt="Toyota Innova">
-                    <img class="fleet-slide" src="images/Urbaina_1.jpeg" alt="Toyota Innova - Photo 2">
-                    <img class="fleet-slide" src="images/Urbaina_2.jpeg" alt="Toyota Innova - Photo 3">
-                    <img class="fleet-slide" src="images/Urbaina_3.jpeg" alt="Toyota Innova - Photo 4">
-                    <img class="fleet-slide" src="images/Urbaina_4.jpeg" alt="Toyota Innova - Photo 5">
-                </div>
-
-                <button class="fleet-prev" type="button" aria-label="Previous image" title="Previous">❮</button>
-                <button class="fleet-next" type="button" aria-label="Next image" title="Next">❯</button>
-                <div class="fleet-dots" aria-label="Slide navigation"></div>
-            </div>
-
-            <div class="card-body">
-                <h3>Toyota Innova</h3>
-
-
-                <ul>
-                    <li>✔ 6–7 Seater</li>
-                    <li>✔ Premium SUV</li>
-                    <li>✔ Best for groups & tours</li>
-                </ul>
-
-                <a href="contact.html" class="btn">Book Now</a>
-            </div>
-        </div>
-
-        <!-- INNOVA (2nd listing removed; duplicates caused UI repetition) -->
-
-    </div>
-</section>
-
-<section class="cta-strip">
-    <div class="container cta-content">
-        <h3>Need a Taxi in Himachal?</h3>
-        <p>Quick booking, best prices, reliable service</p>
-
-        <div class="cta-buttons">
-            <a href="contact.html" class="btn">Book Now</a>
-<a href="https://wa.me/918091331806" class="btn whatsapp">WhatsApp</a>
-        </div>
-    </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-    <div class="container footer-content">
-
-        <!-- ABOUT -->
-        <div class="footer-col">
-            <h3>Himachal Taxi</h3>
-            <p>
-                Reliable taxi service across Himachal Pradesh.
-                We provide safe, comfortable, and affordable travel solutions.
-            </p>
-        </div>
-
-        <!-- LINKS -->
-        <div class="footer-col">
-            <h4>Quick Links</h4>
-            <ul>
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🚕</span>
+                Himachal<span>Taxi</span>
+            </a>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
                 <li><a href="tours.html">Tours</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" class="btn btn-primary btn-sm" data-open-modal>Plan My Trip</a></li>
             </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">☰</button>
         </div>
+    </nav>
 
-        <!-- SERVICES -->
-        <div class="footer-col">
-            <h4>Services</h4>
-            <ul>
-                <li>Local Sightseeing</li>
-                <li>Outstation Trips</li>
-                <li>Airport Pickup</li>
-            </ul>
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-content">
+            <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">✕</button>
+            <a href="index.html">Home</a>
+            <a href="tours.html">Tours</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="#" class="btn btn-primary" data-open-modal>🚀 Plan My Trip</a>
         </div>
-
-        <!-- CONTACT -->
-        <div class="footer-col">
-            <h4>Contact</h4>
-<p>📞 +91 80913 31806</p>
-            <p>✉ booking@himachaltaxi.com</p>
-            <p>1) M4C6+54R, Amb Andaura Railway Station Rd, Amb, Himachal Pradesh 177203</p>
-            <p>2) Out gate of Pathankot railway station, Punjab 145001</p>
-
-        </div>
-
     </div>
 
-    <div class="footer-bottom">
-        <p>© 2026 Himachal Taxi Service | All Rights Reserved</p>
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="home">
+        <div class="hero-bg" style="background-image: url('images/hero-1.jpeg');"></div>
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content" data-aos="fade-up" data-aos-duration="1000">
+            <div class="hero-badge">
+                <span class="hero-badge-dot"></span>
+                Available 24/7 — Book Instantly
+            </div>
+            <h1>Travel in <span>Comfort</span><br>Arrive in Style</h1>
+            <p>Reliable taxi service across Himachal Pradesh. Safe rides, professional drivers, and the best prices — from local sightseeing to long-distance trips.</p>
+            <div class="hero-buttons">
+                <a href="tours.html" class="btn btn-primary">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 17H4a2 2 0 01-2-2V5a2 2 0 012-2h16a2 2 0 012 2v10a2 2 0 01-2 2h-1"/><polygon points="12 15 17 21 7 21 12 15"/></svg>
+                    Explore Tours
+                </a>
+                <a href="https://wa.me/918091331806" class="btn btn-whatsapp" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    WhatsApp Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICES ==================== -->
+    <section class="section" id="services" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>From city sightseeing to long-distance tours — we've got you covered across Himachal.</p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">🏔️</div>
+                    <h3>Local Sightseeing</h3>
+                    <p>Explore Shimla, Manali, Dharamshala & nearby attractions with comfortable rides and experienced drivers.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">🛣️</div>
+                    <h3>Outstation Trips</h3>
+                    <p>Reliable intercity taxi services for long-distance travel across Himachal, Punjab, Chandigarh & Jammu.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">🚉</div>
+                    <h3>Railway Station Pickup</h3>
+                    <p>Timely pickup and drop from Amb Andaura, Pathankot & other stations with hassle-free service.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">✈️</div>
+                    <h3>Airport Pickup</h3>
+                    <p>Convenient airport transfers from Gaggal (Kangra) & Chandigarh airports. Flight tracking included.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== STATS COUNTER ==================== -->
+    <section class="section section-ivory text-center">
+        <div class="container">
+            <div class="section-header">
+                <h2>Trusted by Travelers</h2>
+                <p>Numbers that speak for our commitment to service.</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="zoom-in">
+                    <div class="stat-number" data-target="10" data-suffix="+">0+</div>
+                    <div class="stat-label">Years of Service</div>
+                </div>
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="stat-number" data-target="500" data-suffix="+">0+</div>
+                    <div class="stat-label">Happy Customers</div>
+                </div>
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="stat-number" data-target="100" data-suffix="%">0%</div>
+                    <div class="stat-label">Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FLEET ==================== -->
+    <section class="section" id="fleet" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Fleet</h2>
+                <p>Choose from our well-maintained vehicles for a comfortable journey.</p>
+            </div>
+
+            <div class="cards-grid">
+                <!-- Swift Dzire -->
+                <div class="card fleet-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-img-wrap fleet-carousel" data-carousel>
+                        <div class="fleet-slides">
+                            <img class="fleet-slide" src="images/swift-1.jpeg" alt="Swift Dzire" loading="lazy">
+                             <img class="fleet-slide" src="images/swift-2.jpeg" alt="Swift Dzire" loading="lazy">
+                              
+                        </div>
+                        <span class="fleet-badge">4 Seater</span>
+                        <button class="fleet-prev" type="button" aria-label="Previous">❮</button>
+                        <button class="fleet-next" type="button" aria-label="Next">❯</button>
+                        <div class="fleet-dots"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Swift Dzire</h3>
+                        <p>Perfect for small families. Comfortable AC sedan for city & nearby trips.</p>
+                        <div class="tour-highlights">
+                            <span class="tour-highlight">✔ AC</span>
+                            <span class="tour-highlight">✔ 4 Seats</span>
+                            <span class="tour-highlight">✔ Sedan</span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-sm" data-open-modal>Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Toyota Etios -->
+                <div class="card fleet-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-img-wrap fleet-carousel" data-carousel>
+                        <div class="fleet-slides">
+                            <img class="fleet-slide" src="images/etios.jpeg" alt="Toyota Etios" loading="lazy">
+                        </div>
+                        <span class="fleet-badge">4 Seater</span>
+                        <button class="fleet-prev" type="button" aria-label="Previous">❮</button>
+                        <button class="fleet-next" type="button" aria-label="Next">❯</button>
+                        <div class="fleet-dots"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Toyota Etios</h3>
+                        <p>Spacious sedan ideal for long-distance travel. Smooth ride quality.</p>
+                        <div class="tour-highlights">
+                            <span class="tour-highlight">✔ AC</span>
+                            <span class="tour-highlight">✔ 4 Seats</span>
+                            <span class="tour-highlight">✔ Spacious</span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-sm" data-open-modal>Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Toyota Innova -->
+                <div class="card fleet-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-img-wrap fleet-carousel" data-carousel>
+                        <div class="fleet-slides">
+                           <!--  <img class="fleet-slide" src="images/innova.jpeg" alt="Toyota Innova" loading="lazy"> -->
+                            <img class="fleet-slide" src="images/Urbaina_1.jpeg" alt="Innova Interior" loading="lazy">
+                            <img class="fleet-slide" src="images/Urbaina_2.jpeg" alt="Innova Rear" loading="lazy">
+                            <img class="fleet-slide" src="images/Urbaina_3.jpeg" alt="Innova Side" loading="lazy">
+                            <img class="fleet-slide" src="images/Urbaina_4.jpeg" alt="Innova Front" loading="lazy">
+                        </div>
+                        <span class="fleet-badge">12-13 Seater</span>
+                        <button class="fleet-prev" type="button" aria-label="Previous">❮</button>
+                        <button class="fleet-next" type="button" aria-label="Next">❯</button>
+                        <div class="fleet-dots"></div>
+                    </div>
+                    <div class="card-body">
+                      <h3>Force Urbania</h3>
+<p>Spacious premium van designed for comfortable group travel. Ideal for family trips,
+     corporate tours, airport transfers, and Himachal sightseeing.</p>
+<div class="tour-highlights">
+    <span class="tour-highlight">✔ AC</span>
+    <span class="tour-highlight">✔ 14 Seats</span>
+    <span class="tour-highlight">✔ Luxury Interior</span>
+    <span class="tour-highlight">✔ Ample Luggage Space</span>
+</div>
+                        <a href="#" class="btn btn-primary btn-sm" data-open-modal>Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS ==================== -->
+    <section class="section testimonials-section" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Customers Say</h2>
+                <p>Real reviews from travelers who explored Himachal with us.</p>
+            </div>
+
+            <div class="testimonials-track">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Amazing service! The driver was punctual, the car was spotless, and the ride through the hills was smooth. Highly recommend for anyone visiting Shimla."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">RK</div>
+                        <div>
+                            <div class="testimonial-name">Rahul Kumar</div>
+                            <div class="testimonial-location">Shimla Tour</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"We booked the Innova for a family trip to Manali. The vehicle was very comfortable and the driver knew all the best spots. Will definitely book again!"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">PS</div>
+                        <div>
+                            <div class="testimonial-name">Priya Sharma</div>
+                            <div class="testimonial-location">Manali Family Trip</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Very reliable service for airport pickup. They tracked my flight and were waiting even when I landed late. Great communication throughout."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">AJ</div>
+                        <div>
+                            <div class="testimonial-name">Arjun Joshi</div>
+                            <div class="testimonial-location">Gaggal Airport</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★☆</div>
+                    <p class="testimonial-text">"Good experience for our Dharamshala trip. The booking was easy through WhatsApp and the pricing was reasonable. Would suggest adding more vehicle options."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">MT</div>
+                        <div>
+                            <div class="testimonial-name">Meera Thakur</div>
+                            <div class="testimonial-location">Dharamshala</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Best taxi service in Himachal! Booked for a Chandigarh to Manali trip. Driver was professional, safe driving on the ghat roads. 10/10 experience."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">VS</div>
+                        <div>
+                            <div class="testimonial-name">Vikram Singh</div>
+                            <div class="testimonial-location">Chandigarh → Manali</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== BLOG PREVIEW ==================== -->
+    <section class="section" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header">
+                <h2>Travel Tips & Stories</h2>
+                <p>Explore Himachal like a local. Read our guides and travel stories.</p>
+            </div>
+
+            <div class="cards-grid">
+                <article class="card blog-card" data-aos="fade-up" data-aos-delay="100">
+                    <img class="card-img" src="images/shimla.jpeg" alt="Shimla Travel Guide" loading="lazy">
+                    <div class="card-body">
+                        <div class="blog-date">📅 March 15, 2025</div>
+                        <h3>Shimla Travel Guide 2025</h3>
+                        <p class="blog-excerpt">Everything you need to know about visiting Shimla — from best times to visit, must-see spots, and local food recommendations.</p>
+                        <a href="blog.html" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="card blog-card" data-aos="fade-up" data-aos-delay="200">
+                    <img class="card-img" src="images/manali.jpeg" alt="Manali Road Trip" loading="lazy">
+                    <div class="card-body">
+                        <div class="blog-date">📅 February 28, 2025</div>
+                        <h3>Manali Road Trip Essentials</h3>
+                        <p class="blog-excerpt">Planning a road trip to Manali? Here's what to pack, which routes to take, and how to make the journey unforgettable.</p>
+                        <a href="blog.html" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="card blog-card" data-aos="fade-up" data-aos-delay="300">
+                    <img class="card-img" src="images/dharamshala.jpeg" alt="Dharamshala Travel" loading="lazy">
+                    <div class="card-body">
+                        <div class="blog-date">📅 January 20, 2025</div>
+                        <h3>Exploring Dharamshala & McLeodganj</h3>
+                        <p class="blog-excerpt">Discover the Tibetan culture, stunning monasteries, and breathtaking views of the Dhauladhar range in this complete travel guide.</p>
+                        <a href="blog.html" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="text-center mt-3">
+                <a href="blog.html" class="btn btn-outline">View All Posts</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FAQ ==================== -->
+    <section class="section section-ivory" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions about our taxi service.</p>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How do I book a taxi?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You can book by clicking the "Plan My Trip" button on our site, calling us at +91 80913 31806, or sending a message on WhatsApp. We'll confirm your booking within minutes.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What areas do you serve?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We serve all major Himachal destinations including Shimla, Manali, Dharamshala, Kullu, Kasol, Dalhousie, and Khajjiar. We also provide pickup from Chandigarh, Pathankot, Amb Andaura railway stations, and Gaggal & Chandigarh airports.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What types of vehicles do you have?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer Swift Dzire (4-seater sedan), Toyota Etios (4-seater spacious sedan), and Toyota Innova (6-7 seater premium SUV). All vehicles are air-conditioned and well-maintained.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can I cancel or modify my booking?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, you can cancel or modify your booking. Please inform us at least 4 hours before the scheduled pickup for free cancellation. Last-minute changes may incur a nominal fee.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Is the fare inclusive of all charges?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, our quoted fare includes fuel, driver charges, and tolls. State tax and parking fees may be extra where applicable. We believe in transparent pricing with no hidden charges.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you provide one-way trips?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! We offer both one-way and round-trip options. One-way trips are perfect for airport transfers or intercity travel. Just let us know your requirement when booking.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA STRIP ==================== -->
+    <section class="cta-strip">
+        <div class="container cta-content">
+            <div>
+                <h3>Ready to Explore Himachal?</h3>
+                <p>Book your ride now and enjoy a hassle-free journey.</p>
+            </div>
+            <div class="cta-buttons">
+                <a href="#" class="btn" data-open-modal>Plan My Trip</a>
+                <a href="https://wa.me/918091331806" class="btn btn-whatsapp" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>🚕 Himachal Taxi</h3>
+                <p>Your trusted travel partner across Himachal Pradesh. We provide safe, comfortable, and affordable taxi services for locals and tourists alike. Operating 24/7 with professional drivers.</p>
+                <div class="footer-social">
+                    <a href="https://wa.me/918091331806" target="_blank" rel="noopener" aria-label="WhatsApp">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tours.html">Tour Packages</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="tours.html">Local Sightseeing</a></li>
+                    <li><a href="tours.html">Outstation Trips</a></li>
+                    <li><a href="tours.html">Airport Transfer</a></li>
+                    <li><a href="tours.html">Railway Pickup</a></li>
+                    <li><a href="tours.html">Custom Tours</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <div class="footer-contact-item">
+                    <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <span>+91 80913 31806</span>
+                </div>
+                <div class="footer-contact-item">
+                    <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    <span>booking@himachaltaxi.com</span>
+                </div>
+                <div class="footer-contact-item">
+                    <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span>Amb Andaura, Himachal Pradesh 177203</span>
+                </div>
+                <div class="footer-contact-item">
+                    <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span>Pathankot Railway Station, Punjab 145001</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Himachal Taxi Service. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ==================== PLAN MY TRIP MODAL ==================== -->
+    <div class="modal-overlay" id="planTripModal">
+        <div class="modal">
+            <button class="modal-close" id="modalClose">✕</button>
+            <h2>🚀 Plan My Trip</h2>
+            <p class="section-subtitle">Tell us about your trip and we'll get back to you instantly!</p>
+
+            <form class="modal-form" id="planTripForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="ptName">Full Name *</label>
+                        <input type="text" id="ptName" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ptEmail">Email Address</label>
+                        <input type="email" id="ptEmail" placeholder="email@example.com">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="ptPhone">Phone Number *</label>
+                        <input type="tel" id="ptPhone" placeholder="+91 XXXXX XXXXX" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ptDate">Travel Date *</label>
+                        <input type="date" id="ptDate" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="ptPickup">Pickup Location *</label>
+                        <input type="text" id="ptPickup" placeholder="City / Location" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ptDestination">Destination *</label>
+                        <input type="text" id="ptDestination" placeholder="Where to?" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="ptPassengers">Passengers</label>
+                        <select id="ptPassengers">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="ptVehicle">Vehicle Preference</label>
+                        <select id="ptVehicle">
+                            <option value="">No Preference</option>
+                            <option value="Sedan">Sedan (4 Seater)</option>
+                            <option value="SUV">SUV (6-7 Seater)</option>
+                            <option value="Tempo Traveller">Tempo Traveller</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="ptMessage">Special Requests</label>
+                    <textarea id="ptMessage" placeholder="Any specific requirements..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-secondary">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                    Send via WhatsApp
+                </button>
+            </form>
+        </div>
     </div>
-</footer>>
 
-<script>
-    (function () {
-        function initFleetCarousels() {
-            const carousels = document.querySelectorAll('[data-carousel]');
-            carousels.forEach((carousel) => {
-                const slidesWrap = carousel.querySelector('.fleet-slides');
-                const slides = Array.from(carousel.querySelectorAll('.fleet-slide'));
-                const prevBtn = carousel.querySelector('.fleet-prev');
-                const nextBtn = carousel.querySelector('.fleet-next');
-                const dotsWrap = carousel.querySelector('.fleet-dots');
+    <!-- ==================== FLOATING BOOKING BUTTON ==================== -->
+    <div class="floating-whatsapp" id="floatingBookingBtn">
+        <span class="floating-whatsapp-tooltip">Quick Booking!</span>
+        <button class="floating-whatsapp-btn" aria-label="Quick Booking" style="background:var(--primary);animation:none;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M5 17H4a2 2 0 01-2-2V5a2 2 0 012-2h16a2 2 0 012 2v10a2 2 0 01-2 2h-1"/><polygon points="12 15 17 21 7 21 12 15"/></svg>
+        </button>
+    </div>
 
-                if (!slidesWrap || slides.length === 0) return;
+    <!-- Floating Booking Panel -->
+    <div class="floating-booking-overlay" id="floatingBookingOverlay">
+        <div class="floating-booking-card">
+            <button class="booking-close" id="bookingClose">✕</button>
+            <h4>🚀 Quick Booking</h4>
+            <input type="text" placeholder="From (City)" id="quickFrom">
+            <input type="text" placeholder="To (Destination)" id="quickTo">
+            <input type="date" id="quickDate">
+            <select id="quickVehicle">
+                <option value="">Select Vehicle</option>
+                <option value="Sedan">Sedan (4 Seater)</option>
+                <option value="SUV">SUV (6-7 Seater)</option>
+                <option value="Tempo">Tempo Traveller</option>
+            </select>
+            <button class="btn btn-secondary" id="quickBookBtn">Check Availability</button>
+        </div>
+    </div>
 
-                let index = 0;
+    <!-- ==================== BACK TO TOP ==================== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
 
-                // Build dots (only once)
-                if (dotsWrap && dotsWrap.children.length === 0) {
-                    slides.forEach((_, i) => {
-                        const dot = document.createElement('button');
-                        dot.type = 'button';
-                        dot.className = 'fleet-dot';
-                        dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
-                        dot.addEventListener('click', () => goTo(i));
-                        dotsWrap.appendChild(dot);
-                    });
-                }
+    <!-- ==================== SCRIPTS ==================== -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS (Animate on Scroll)
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 80,
+            easing: 'ease-out-cubic'
+        });
 
-                const dots = dotsWrap ? Array.from(dotsWrap.querySelectorAll('.fleet-dot')) : [];
-
-                function render() {
-                    const slideWidth = carousel.clientWidth;
-                    slidesWrap.style.transform = 'translateX(' + (-index * slideWidth) + 'px)';
-
-                    dots.forEach((d, i) => {
-                        if (i === index) d.classList.add('active');
-                        else d.classList.remove('active');
-                    });
-                }
-
-                function goTo(i) {
-                    index = (i + slides.length) % slides.length;
-                    render();
-                }
-
-                prevBtn && prevBtn.addEventListener('click', () => goTo(index - 1));
-                nextBtn && nextBtn.addEventListener('click', () => goTo(index + 1));
-
-                // initial render
-                render();
-
-                // keep aligned on resize
-                window.addEventListener('resize', render);
-
-                // optional: autoplay for multi-image carousels
-                if (slides.length > 1) {
-                    let timer = setInterval(() => goTo(index + 1), 3500);
-                    carousel.addEventListener('mouseenter', () => clearInterval(timer));
-                    carousel.addEventListener('mouseleave', () => {
-                        timer = setInterval(() => goTo(index + 1), 3500);
-                    });
-                }
+        // Set min date for date inputs to today
+        document.addEventListener('DOMContentLoaded', function() {
+            const today = new Date().toISOString().split('T')[0];
+            document.querySelectorAll('input[type="date"]').forEach(function(el) {
+                el.setAttribute('min', today);
             });
-        }
 
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', initFleetCarousels);
-        } else {
-            initFleetCarousels();
-        }
-    })();
-</script>
+            // Quick Book button
+            var quickBtn = document.getElementById('quickBookBtn');
+            if (quickBtn) {
+                quickBtn.addEventListener('click', function() {
+                    var from = document.getElementById('quickFrom').value.trim();
+                    var to = document.getElementById('quickTo').value.trim();
+                    var date = document.getElementById('quickDate').value;
+                    var vehicle = document.getElementById('quickVehicle').value;
 
+                    var msg = '🚖 *Quick Booking Request*';
+                    msg += '\n\n📍 From: ' + (from || 'Not specified');
+                    msg += '\n🏁 To: ' + (to || 'Not specified');
+                    msg += '\n📅 Date: ' + (date || 'Not specified');
+                    msg += '\n🚗 Vehicle: ' + (vehicle || 'Not specified');
+
+                    window.open('https://wa.me/918091331806?text=' + encodeURIComponent(msg), '_blank');
+                });
+            }
+        });
+    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
 
