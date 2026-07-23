@@ -7,56 +7,46 @@
 
 ## ✅ Phase 2: Core Assets
 - [x] **css/style.css** — Complete redesign stylesheet
-  - CSS variables, reset, typography (Google Fonts: Poppins + Inter)
-  - Layout, navbar, hero, cards, sections
-  - Fleet carousel, testimonials, FAQ accordion
-  - Blog layout, Plan My Trip modal
-  - Floating WhatsApp, Back to Top
-  - Animations, responsive breakpoints
 - [x] **js/main.js** — All JavaScript functionality
-  - Mobile hamburger menu
-  - Fleet image carousels (multi-image)
-  - Testimonials carousel (auto-slide)
-  - FAQ accordion toggle
-  - Plan My Trip modal open/close/submit
-  - Floating WhatsApp pulse
-  - Back to Top button
-  - Smooth scroll for anchor links
-  - AOS scroll animation init
-  - Active nav link highlighting
-  - Counter animation
-  - Contact form submission
 
 ## ✅ Phase 3: Pages
-- [x] **index.html** — Home page (Hero, Services, Fleet, Testimonials, Blog Preview, FAQ, CTA, Quick booking widget)
-- [x] **tours.html** — Tours page (All tours without prices, expanded to Jammu & Chandigarh)
-- [x] **blog.html** — NEW Blog page (Grid with 6 posts, images, excerpts)
-- [x] **about.html** — About page (Updated with new branding)
-- [x] **contact.html** — Contact page (Form, Map, Plan My Trip trigger)
+- [x] **index.html** — Home page
+- [x] **tours.html** — Tours page
+- [x] **blog.html** — Blog page
+- [x] **about.html** — About page
+- [x] **contact.html** — Contact page
 
 ## ✅ Phase 4: Features
-- [x] Plan My Trip modal (Name, Email, Phone, Pickup, Destination, Date, Passengers, Vehicle, Message)
+- [x] Plan My Trip modal
 - [x] FAQ accordion on home page
 - [x] Testimonials carousel with ratings
-- [x] Floating WhatsApp button (fixed bottom-right)
+- [x] Floating WhatsApp button
 - [x] Back to Top button
 - [x] Scroll-triggered animations (AOS)
-- [x] Quick booking widget on hero
+- [x] Quick booking widget
 
 ## ✅ Phase 5: SEO & Performance
-- [x] Meta tags on all pages (title, description, keywords, viewport)
+- [x] Meta tags on all pages
 - [x] Open Graph / Twitter Card meta tags
-- [x] JSON-LD LocalBusiness schema on home page
+- [x] JSON-LD LocalBusiness schema
 - [x] Semantic HTML5 structure
 - [x] Lazy loading on images
 - [x] Alt text on all images
-- [x] Proper heading hierarchy (h1 → h2 → h3)
+- [x] Proper heading hierarchy
 
-## ✅ Phase 6: Polish & Testing
-- [x] Check all page links work correctly
-- [x] Verify mobile responsiveness at 480px, 768px, 1024px
-- [x] Test Plan My Trip form submission
-- [x] Test fleet carousels
-- [x] Test FAQ accordion
-- [x] Verify all animations work
-- [x] Final code cleanup
+## ✅ Phase 6: Email Update & Footer Alignment (Latest)
+- [x] Updated all emails from `booking@himachaltaxi.com` to `thehimachaltaxi@gmail.com`
+- [x] Standardized footer across all pages to match index.html:
+  - Brand column with full description + WhatsApp social icon
+  - Quick Links column with "About Us" label
+  - Our Services column (Local Sightseeing, Outstation Trips, Airport Transfer, Railway Pickup, Custom Tours)
+  - Contact Info column with Phone, Email, Amb Andaura, Pathankot address
+- [x] Fixed contact.html — was truncated, now fully restored with:
+  - Complete contact form + info sections
+  - Map section
+  - CTA strip
+  - Standard footer
+  - Plan My Trip modal
+  - Floating WhatsApp + back to top
+  - AOS scripts
+

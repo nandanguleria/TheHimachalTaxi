@@ -286,9 +286,9 @@ p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; }
 }
 
 .nav-links a {
-    font-size: 0.88rem;
-    font-weight: 500;
-    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-dark);
     transition: var(--transition);
     position: relative;
     padding: 4px 0;
@@ -320,6 +320,7 @@ p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; }
     padding: 8px 20px;
     font-size: 0.82rem;
     margin-left: 8px;
+    color: var(--white) !important;
 }
 
 .hamburger {
@@ -388,6 +389,7 @@ p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; }
 .mobile-nav-content .btn {
     margin-top: 20px;
     text-align: center;
+    color: var(--white) !important;
 }
 
 .mobile-nav-close {
@@ -602,8 +604,8 @@ p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; }
 }
 
 .service-icon {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     background: var(--accent-bg);
     border-radius: 16px;
     display: flex;
@@ -612,6 +614,18 @@ p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; }
     margin: 0 auto 16px;
     font-size: 1.6rem;
     transition: var(--transition);
+    overflow: hidden;
+}
+
+.service-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.service-card:hover .service-icon img {
+    transform: scale(1.1);
 }
 
 .service-card:hover .service-icon {
