@@ -442,7 +442,7 @@ p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; }
     );
 }
 
-.hero-content {
+.hero-content {  
     position: relative;
     z-index: 2;
     max-width: 620px;
@@ -1882,8 +1882,18 @@ body.no-scroll {
         padding: 20px;
     }
 
+    .modal-overlay {
+        align-items: flex-start;
+        padding: 10px;
+        overflow-y: auto;
+    }
+
     .modal {
-        padding: 28px 20px 24px;
+        padding: 32px 16px 24px;
+        max-height: 98vh;
+        overflow-y: auto;
+        margin-top: 10px;
+        border-radius: var(--radius-md);
     }
 
     .stats-grid {
@@ -1963,6 +1973,8 @@ body.no-scroll {
 
     .modal {
         padding: 24px 16px 20px;
+        max-height: 96vh;
+        overflow-y: auto;
     }
 }
 
