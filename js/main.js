@@ -18,12 +18,12 @@
 
         const openMenu = () => {
             mobileNav.classList.add('open');
-            document.body.style.overflow = 'hidden';
+            document.body.classList.add('no-scroll');
         };
 
         const closeMenu = () => {
             mobileNav.classList.remove('open');
-            document.body.style.overflow = '';
+            document.body.classList.remove('no-scroll');
         };
 
         hamburger.addEventListener('click', openMenu);
@@ -41,6 +41,16 @@
             if (e.key === 'Escape' && mobileNav.classList.contains('open')) {
                 closeMenu();
             }
+        });
+
+        // Close mobile nav when any nav link is clicked
+        mobileNav.querySelectorAll('a').forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                // For modal trigger buttons, close the menu before opening modal
+                if (link.hasAttribute('data-open-modal')) {
+                    closeMenu();
+                }
+            });
         });
     }
 
@@ -195,23 +205,30 @@
 
         function openModal() {
             modal.classList.add('open');
-            document.body.style.overflow = 'hidden';
+            document.body.classList.add('no-scroll');
         }
 
         function closeModal() {
             modal.classList.remove('open');
-            document.body.style.overflow = '';
+            document.body.classList.remove('no-scroll');
         }
 
         openBtns.forEach(function (btn) {
-            btn.addEventListener('click', openModal);
+            btn.addEventListener('click', function (e) {
+                e.preventDefault();
+                openModal();
+            });
         });
 
         if (closeBtn) {
             closeBtn.addEventListener('click', closeModal);
         }
 
+        // Close on overlay click (works on touch & mouse)
         modal.addEventListener('click', function (e) {
+            if (e.target === modal) closeModal();
+        });
+        modal.addEventListener('touchstart', function (e) {
             if (e.target === modal) closeModal();
         });
 
