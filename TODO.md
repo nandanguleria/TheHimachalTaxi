@@ -50,3 +50,13 @@
   - Floating WhatsApp + back to top
   - AOS scripts
 
+## ✅ Phase 7: SEO Enhancements
+- [x] **index.html** — Added `twitter:image`, updated JSON-LD business name to "The Himachal Taxi", made image URL absolute in JSON-LD
+- [x] **about.html** — Added `og:url`, `og:type`, `og:image:width`, `og:image:height`, `twitter:image`, full Twitter Card block
+- [x] **tours.html** — Added `twitter:description`, `twitter:image`, `og:image:width`, `og:image:height`, enhanced OG/twitter titles & descriptions
+- [x] **contact.html** — Added `robots`, `canonical`, full OG tags (title, description, url, type, image, width, height), full Twitter Card block
+- [x] **blog.html** — Added `robots`, `canonical`, full OG tags (title, description, url, type, image, width, height), full Twitter Card block
+- [x] Absolute URLs used for all OG/Twitter images (`https://thehimachaltaxi.com/images/...`)
+- [x] Inner hero `background-image` URLs updated to absolute paths in contact.html and blog.html
+- [x] Favicon link excluded (no favicon file available)
+
