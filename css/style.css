@@ -165,6 +165,20 @@ p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; }
     box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
 }
 
+/* --- Google Review Button --- */
+.btn-google-review {
+    background: #4285F4;
+    color: var(--white);
+    box-shadow: 0 4px 14px rgba(66, 133, 244, 0.3);
+    gap: 10px;
+}
+
+.btn-google-review:hover {
+    background: #3367D6;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(66, 133, 244, 0.35);
+}
+
 .btn-whatsapp svg,
 .btn-primary svg,
 .btn-secondary svg {
