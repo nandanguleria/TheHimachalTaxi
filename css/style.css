@@ -167,7 +167,7 @@ p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; }
 
 /* --- Google Review Button --- */
 .btn-google-review {
-    background: #4285F4;
+    background: #14B8A6;
     color: var(--white);
     box-shadow: 0 4px 14px rgba(66, 133, 244, 0.3);
     gap: 10px;
