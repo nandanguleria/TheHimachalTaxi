@@ -212,7 +212,12 @@
             modal.classList.remove('open');
             document.body.classList.remove('no-scroll');
         }
-
+        
+        if (window.location.hash === '#plan-my-trip') {
+            setTimeout(function () {
+                openModal();
+            }, 300);
+        }
         openBtns.forEach(function (btn) {
             btn.addEventListener('click', function (e) {
                 e.preventDefault();
